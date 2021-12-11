@@ -11,8 +11,9 @@ buildscript {
         }
     }
     dependencies {
-//        classpath 'com.android.tools:r8:2.2.71'
-        classpath 'com.android.tools:r8:3.0.75'
+//        classpath 'com.android.tools:r8:3.0.78'
+//        classpath 'com.android.tools:r8:3.1.46'
+//        classpath 'com.android.tools:r8:3.2.31'
 //        classpath 'com.android.tools:r8:8470bf'
         classpath "com.android.tools.build:gradle:7.0.4"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0"

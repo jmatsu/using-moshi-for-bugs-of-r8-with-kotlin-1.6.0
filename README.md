@@ -4,11 +4,15 @@ It seems R8 eliminates Kotlin Metadata unexpectedly for Kotlin 1.6.0. This occur
 
 R8 version (corresponding AGP version) | Work? | Note
 :-----|:-----|:----
-2.2.71 (4.2.2) | :x: | kotlin metadata could be found but app crashed due to accessing missing properties
 3.0.73 (7.0.4) | :x: | kotlin metadata was not found so Moshi couldn't use KotlinJsonAdapter
-3.0.75 (?) | :x: | ditto
-8470bf (?) | :white_check_mark: | HEAD of main branch at Dec 12. [https://r8.googlesource.com/r8/+/8470bf53e47d6b42b89b7ef31015002869a283e5](https://r8.googlesource.com/r8/+/8470bf53e47d6b42b89b7ef31015002869a283e5)
+3.0.78 (?) | :x: | ditto. (The latest of R8 3.0.x)
+3.1.30 (7.1.0-beta04) | :x: | No crash happened but bindings are wrong.
+3.1.46 (?) | :x: | ditto (The latest of R8 3.1.x)
+3.2.31 (?) | :white_check_mark: | The latest of R8 3.2.x
+8470bf (?) | :white_check_mark: | HEAD of main branch
 
-3.0.73 | 3.0.75 | 8470bf
+Logs
+
+3.0.73, 3.0.78 | 3.1.30, 3.1.46 | 8470bf
 :---|:----|:---
-![wont_work_1](assets/agp-704-r8-3073.png)|![wont_work_2](assets/agp-704-r8-3075.png)|![will_work](assets/agp-704-r8-8470bf.png)
+![wont_work_1](assets/class-json-adapter.png)|![will_work](assets/wrong-property-binding.png)|![will_work](assets/expected.png)

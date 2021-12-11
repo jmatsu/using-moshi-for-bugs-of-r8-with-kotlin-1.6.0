@@ -26,14 +26,16 @@ class MainActivity : AppCompatActivity() {
 
         // "com.squareup.moshi.kotlin.reflect.KotlinJsonAdapter was expected but not. ClassJsonAdapter was used instead.😨"
         Log.d("Logging", adapter.javaClass.name)
+
+        Log.d("Logging", adapter.toJson(Example()))
     }
 }
 
 data class Example(
     @Json
-    val arg1: String,
+    val arg1: String = "arg1",
     @Json(name = "different_name")
-    val arg2: String
+    val arg2: String = "arg2"
 )
 
 class JsonFactoryForLogging : JsonAdapter.Factory {
