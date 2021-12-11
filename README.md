@@ -5,7 +5,7 @@ Kotlin 1.6.0 + Moshi Reflection + R8
 R8 version | Work? | Note
 :-----|:-----|:----
 3.0.73 (AGP 7.0.4) | :x: | kotlin metadata was not found so Moshi couldn't use KotlinJsonAdapter
-3.0.78 (The latest of 3.0.x) | :x: | No crash happened but member properties are missing.
+3.0.78 (The latest of 3.0.x) | :x: | KotlinJsonAdapter was resolved but member properties were missing.
 3.1.30 (AGP 7.1.0-beta04) | :x: | ditto.
 3.1.46 (The latest of 3.1.x) | :x: | ditto.
 3.2.31 (The latest of 3.2.x) | :white_check_mark: | N/A
