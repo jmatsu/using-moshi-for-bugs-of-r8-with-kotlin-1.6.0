@@ -21,4 +21,4 @@
 #-renamesourcefileattribute SourceFile
 
 # to check adapters
--keep class * extends com.squareup.moshi.JsonAdapter
+-keep class * extends com.squareup.moshi.JsonAdapter { *; }
